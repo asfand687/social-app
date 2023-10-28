@@ -18,7 +18,7 @@ import { z } from 'zod'
 
 
 const SignupForm = () => {
-  const isLoading = false
+  const isLoading = true
   const form = useForm<z.infer<typeof signupValidation>>({
     resolver: zodResolver(signupValidation),
     defaultValues: {
